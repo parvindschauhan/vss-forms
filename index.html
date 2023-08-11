@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Employee Document</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="Adhaar Card">Adhaar Card:</label>
+        <input type="file" id="Adhaar Card" name="Adhaar Card" accept=".pdf,.docx" required><br><br>
+        
+        <label for="Education Certificate">Education Certificate:</label>
+        <input type="file" id="Education Certificate" name="Education Certificate" accept=".pdf,.docx"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
