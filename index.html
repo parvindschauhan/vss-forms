@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Job Application Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Employee Document</h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="Adhaar Card">Adhaar Card:</label>
-        <input type="file" id="Adhaar Card" name="Adhaar Card" accept=".pdf,.docx" required><br><br>
-        
-        <label for="Education Certificate">Education Certificate</label>
-        <input type="file" id="Education Certificate" name="Education Certificate" accept=".pdf,.docx"><br><br>
-        
-        <input type="submit" value="Submit">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+      <fieldset>
+        <h2>Address:</h2>
+        <label for="House/Unit No.">House/Unit No.:</label>
+        <input
+          type="text"
+          id="House/Unit No."
+          name="House/Unit No."
+          required
+        /><br /><br />
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required /><br /><br />
+        <label for="Village/Suburb">Village/Suburb:</label>
+        <input
+          type="text"
+          id="Village/Suburb"
+          name="Village/Suburb"
+          required
+        /><br /><br />
+        <label for="District">District:</label>
+        <input type="text" id="District" name="District" required /><br /><br />
+        <label for="Post Code">Post Code:</label>
+        <input
+          type="text"
+          id="Post Code"
+          name="Post Code"
+          required
+        /><br /><br />
+        <label for="State">State:</label>
+        <input type="text" id="State" name="State" required /><br /><br />
+      </fieldset>
+
+      <label for="Adhaar Card">Adhaar Card:</label>
+      <input
+        type="file"
+        id="Adhaar Card"
+        name="Adhaar Card"
+        accept=".pdf,.docx"
+        required
+      /><br /><br />
+
+      <label for="Education Certificate">Education Certificate: </label>
+      <input
+        type="file"
+        id="Education Certificate"
+        name="Education Certificate"
+        accept=".pdf,.docx"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>
